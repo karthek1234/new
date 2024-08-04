@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    position: sticky;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+
+}
+.main{
+    height: 100vh;
+    background:url(bg1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.logo{
+    position: static;
+    color: rgb(7, 214, 7);
+    padding-left: 30px;
+    cursor: pointer;
+}
+.menu{
+    position: absolute;
+    right: 300px;
+    display: inline-block;
+}
+ul li{
+    display: inline-block;
+    margin: 30px;
+    margin-right: 20px;
+    position: relative;
+
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(7, 214, 7);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+ul li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+ul li a:hover{
+    color:white;
+}
+.logo:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+.search{
+    margin-right: 30px;
+}
+.int{
+    border:2px solid  rgb(140, 225, 12);
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+}
+.int:hover{
+    border: 3px solid red;
+}
+.btn{
+    position: sticky;
+    padding: 10px;
+    border-radius:5px ;
+    background: rgb(140, 225, 12);
+    color: black;
+}
+.btn:hover{
+    background: white;
+}
+.content {
+    color: white;
+    margin-left: 50px;
+    margin-top: 40px;
+    position: relative;
+}
+.content h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 2px;
+
+}
+.content span{
+    color: rgb(140, 225, 12);
+}
+.content p{
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+
+}
+.content button{
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    background-color: rgb(140, 225, 12);
+    border: none;
+    border-radius: 10px;
+}
+.content a{
+    text-align: center;
+    color:  black;
+}
+.content button:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+.anch{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.form{
+    width: 250px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    height: 380px;
+    position: absolute;
+    top: 10px;
+    left: 850px;
+    border-radius:10px ;
+    padding: 25px;
+}
+.form h3{
+    width: 220px;
+    text-align: center;
+    border: 2px solid  rgb(140, 225, 12);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+   
+}
+.form input{
+    color: white;
+    width: 220px;
+    border-bottom: 2px solid  rgb(140, 225, 12);
+    border-left:none ;
+    border-right: none;
+    border-top:none ;
+    background: transparent;
+    padding: 10px;
+    margin: 10px;
+    letter-spacing: 3px;
+}
+.form input:focus{
+    outline: none;
+
+}
+.form .btn1{
+    text-decoration: none;
+    text-align: center;
+   width: 250px;
+   cursor: pointer;
+   
+}
+.form .btn1::after{
+    
+    cursor: wait;
+}
+.form button{
+    background:  rgb(140, 225, 12);
+}
+.link{
+    padding-top: 15px;
+    text-align: center;
+    
+}
+.liw{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.sign{
+    text-decoration: none;
+    padding-left: 80px;
+    margin-top: 40px;
+}
+.icon a{
+    text-decoration: none;
+    color: white;
+}
+.icon ion-icon{
+    color: white;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    top: -40px;
+    left: 10px;
+}
+.icon ion-icon:hover{
+    color:  rgb(140, 225, 12);
+}
+::placeholder{
+    color: white;
+}
